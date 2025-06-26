@@ -73,7 +73,7 @@ public:
             // 6b: Exit
             return;
         }
-        // Step 7: if the value in the data field of the new node is greater than that of parent
+        // Step 7: if the value in the data field of the new node is greater than that of the parent
         else if(x > parent->info) {
             // 7a: Make the right child of parent point to the new node
             parent->rightchild = newNode;
@@ -81,8 +81,14 @@ public:
             // 7b: Exit
             return;
         }
+    }
 
+    bool isEmpty() {
+        // Checks if the tree is empty
+        return ROOT == nullptr;
     }
 };
 
-int main() {}
+int main() {
+
+}
