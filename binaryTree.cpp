@@ -35,7 +35,8 @@ public:
                 currentNode = currentNode->rightchild;
             }
         }
-
     }
 
 };
+
+int main() {}
