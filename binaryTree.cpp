@@ -123,7 +123,7 @@ public:
 };
 
 int main() {
-BinaryTree x;
+    BinaryTree x;
     while (true) {
         cout << "\nMenu" << endl;
         cout << "1. Implement insert operation" << endl;
@@ -158,7 +158,7 @@ BinaryTree x;
         }
         case '5':
             return 0;
-        default: {
+        default:{
             cout << "Invalid option" << endl;
             break;
         }
