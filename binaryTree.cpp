@@ -106,8 +106,8 @@ public:
         } if (ptr == nullptr)
             return;
         cout << ptr->info << " "; // parent
-        inorder(ptr->leftchild);
-        inorder(ptr->rightchild);
+        preorder(ptr->leftchild);
+        preorder(ptr->rightchild);
     }
     
     void postorder(Node* ptr) {
@@ -116,8 +116,8 @@ public:
             return;
         } if (ptr == nullptr)
             return;
-        inorder(ptr->leftchild);
-        inorder(ptr->rightchild);
+        postorder(ptr->leftchild);
+        postorder(ptr->rightchild);
         cout << ptr->info << " "; // parent
     }
 };
