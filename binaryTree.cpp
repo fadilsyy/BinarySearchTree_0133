@@ -20,7 +20,12 @@ public:
     Node* ROOT;
 
     BinaryTree() {
-        ROOT = nullptr;
+        ROOT = nullptr; // Initialize ROOT to null
+    }
+
+    void search(int element, Node *&parent, Node *&currentNode) {
+        // This function searches the currentNode of the specified Node as well as the current
+        
     }
 
 };
