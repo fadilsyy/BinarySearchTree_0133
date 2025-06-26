@@ -100,7 +100,25 @@ public:
     }
 
     void preorder(Node* ptr) {
-        
+        if (isEmpty()) {
+            cout << "Tree is empty." << endl;
+            return;
+        } if (ptr == nullptr)
+            return;
+        cout << ptr->info << " "; // parent
+        inorder(ptr->leftchild);
+        inorder(ptr->rightchild);
+    }
+    
+    void postorder(Node* ptr) {
+        if (isEmpty()) {
+            cout << "Tree is empty." << endl;
+            return;
+        } if (ptr == nullptr)
+            return;
+        inorder(ptr->leftchild);
+        inorder(ptr->rightchild);
+        cout << ptr->info << " "; // parent
     }
 };
 
