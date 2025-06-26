@@ -60,6 +60,9 @@ public:
         if(parent ==  nullptr) {
             // 5a: Mark the new node as ROOT
             ROOT = newNode;
+
+            // 5b: Exit
+            return;
         }
 
     }
