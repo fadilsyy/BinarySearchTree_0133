@@ -3,13 +3,12 @@ using namespace std;
 
 class Node {
 public:
-    int data;
+    int info;
     Node* leftchild;
     Node* rightchild;
 
     // Constructor for the node class
-    Node(int value) {
-        data = value;
+    Node() {
         leftchild = nullptr;    // Initialize left child to null
         rightchild = nullptr;   // Initialize right child to null
     }
@@ -27,9 +26,9 @@ public:
         // This function searches the currentNode of the specified Node as well as the current Node of its parent
         currentNode = ROOT;
         parent = nullptr;
-        while((currentNode != nullptr) && (currentNode->data != element)) {
+        while((currentNode != nullptr) && (currentNode->info != element)) {
             parent = currentNode;
-            if(element < currentNode->data) {
+            if(element < currentNode->info) {
                 currentNode = currentNode->leftchild;
             } else {
                 currentNode = currentNode->rightchild;
@@ -37,6 +36,17 @@ public:
         }
     }
 
+    void insert() {
+        int x;
+        cout << "Masukkan nilai: ";
+        cin >> x;
+
+        // Step 1: Allocate memory for the new node
+        Node *newNode = new Node();
+
+
+
+    }
 };
 
 int main() {}
