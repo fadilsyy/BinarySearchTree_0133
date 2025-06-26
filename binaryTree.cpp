@@ -69,6 +69,9 @@ public:
         if(x < parent->info) {
             // 6a: Make the left child of parent point to the new node
             parent->leftchild = newNode;
+
+            // 6b: Exit
+            return;
         }
 
     }
